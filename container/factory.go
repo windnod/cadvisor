@@ -64,6 +64,8 @@ const (
 	CPUTopologyMetrics             MetricKind = "cpu_topology"
 	ResctrlMetrics                 MetricKind = "resctrl"
 	CPUSetMetrics                  MetricKind = "cpuset"
+	PSITotalMetrics                MetricKind = "psi_total"
+	PSIAvgMetrics                  MetricKind = "psi_avg"
 )
 
 // AllMetrics represents all kinds of metrics that cAdvisor supported.
@@ -89,6 +91,8 @@ var AllMetrics = MetricSet{
 	CPUTopologyMetrics:             struct{}{},
 	ResctrlMetrics:                 struct{}{},
 	CPUSetMetrics:                  struct{}{},
+	PSITotalMetrics:                struct{}{},
+	PSIAvgMetrics:                  struct{}{},
 }
 
 func (mk MetricKind) String() string {
