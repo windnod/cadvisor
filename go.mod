@@ -47,3 +47,5 @@ require (
 	k8s.io/klog/v2 v2.2.0
 	k8s.io/utils v0.0.0-20201110183641-67b214c5f920
 )
+
+replace github.com/opencontainers/runc => github.com/dqminh/runc v0.0.0-20220513155811-6414629ada8a
