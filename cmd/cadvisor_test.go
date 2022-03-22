@@ -109,6 +109,8 @@ func TestToIncludedMetrics(t *testing.T) {
 			container.CPUTopologyMetrics:             struct{}{},
 			container.ResctrlMetrics:                 struct{}{},
 			container.CPUSetMetrics:                  struct{}{},
+			container.PSITotalMetrics:                struct{}{},
+			container.PSIAvgMetrics:                  struct{}{},
 		},
 		container.AllMetrics,
 		{},
