@@ -72,4 +72,4 @@ require (
 	gotest.tools/v3 v3.0.2 // indirect
 )
 
-replace github.com/opencontainers/runc => github.com/dqminh/runc v0.0.0-20220513155811-6414629ada8a
+replace github.com/opencontainers/runc => github.com/windnod/runc v1.1.4-3
