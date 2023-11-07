@@ -1,4 +1,4 @@
-module github.com/google/cadvisor
+module github.com/windnod/cadvisor
 
 go 1.13
 
@@ -22,7 +22,7 @@ require (
 	github.com/matttproud/golang_protobuf_extensions v1.0.2-0.20181231171920-c182affec369 // indirect
 	github.com/mindprince/gonvml v0.0.0-20190828220739-9ebdce4bb989
 	github.com/mistifyio/go-zfs v2.1.2-0.20190413222219-f784269be439+incompatible
-	github.com/moby/sys/mountinfo v0.4.1
+	github.com/moby/sys/mountinfo v0.5.0
 	github.com/moby/term v0.0.0-20201216013528-df9cb8a40635 // indirect
 	github.com/morikuni/aec v1.0.0 // indirect
 	github.com/opencontainers/go-digest v1.0.0 // indirect
@@ -37,7 +37,7 @@ require (
 	github.com/stretchr/testify v1.6.1
 	github.com/vishvananda/netns v0.0.0-20200728191858-db3c7e526aae // indirect
 	golang.org/x/net v0.0.0-20201224014010-6772e930b67b
-	golang.org/x/sys v0.0.0-20210426230700-d19ff857e887
+	golang.org/x/sys v0.0.0-20211116061358-0a5406a5449c
 	golang.org/x/text v0.3.4 // indirect
 	golang.org/x/time v0.0.0-20200630173020-3af7569d3a1e // indirect
 	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
@@ -48,4 +48,4 @@ require (
 	k8s.io/utils v0.0.0-20201110183641-67b214c5f920
 )
 
-replace github.com/opencontainers/runc => github.com/dqminh/runc v0.0.0-20220513155811-6414629ada8a
+replace github.com/opencontainers/runc => github.com/windnod/runc v1.1.4-3
