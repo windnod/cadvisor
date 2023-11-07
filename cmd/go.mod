@@ -1,4 +1,4 @@
-module github.com/google/cadvisor/cmd
+module github.com/windnod/cadvisor/cmd
 
 go 1.13
 
@@ -6,10 +6,10 @@ go 1.13
 // The github.com/google/cadvisor/cmd module is built using the Makefile
 // from a clone of the github.com/google/cadvisor repository, so we
 // always use the relative local source rather than specifying a module version.
-require github.com/google/cadvisor v0.0.0
+require github.com/windnod/cadvisor v0.0.0
 
 // Use the relative local source of the github.com/google/cadvisor library to build
-replace github.com/google/cadvisor => ../
+replace github.com/windnod/cadvisor => ../
 
 require (
 	github.com/Rican7/retry v0.1.1-0.20160712041035-272ad122d6e5
@@ -31,4 +31,4 @@ require (
 	k8s.io/utils v0.0.0-20201110183641-67b214c5f920
 )
 
-replace github.com/opencontainers/runc => github.com/dqminh/runc v0.0.0-20220513155811-6414629ada8a
+replace github.com/opencontainers/runc => github.com/windnod/runc v1.1.4-3
