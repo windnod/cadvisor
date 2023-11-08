@@ -29,9 +29,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/opencontainers/runc/libcontainer"
-	"github.com/opencontainers/runc/libcontainer/cgroups"
-	"github.com/opencontainers/runc/libcontainer/cgroups/fs2"
+	"github.com/windnod/runc/libcontainer"
+	"github.com/windnod/runc/libcontainer/cgroups"
+	"github.com/windnod/runc/libcontainer/cgroups/fs2"
 	"k8s.io/klog/v2"
 
 	"github.com/windnod/cadvisor/container"

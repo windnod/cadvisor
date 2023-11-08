@@ -22,8 +22,8 @@ import (
 	info "github.com/windnod/cadvisor/info/v1"
 	"github.com/windnod/cadvisor/stats"
 
-	"github.com/opencontainers/runc/libcontainer/configs"
-	"github.com/opencontainers/runc/libcontainer/intelrdt"
+	"github.com/windnod/runc/libcontainer/configs"
+	"github.com/windnod/runc/libcontainer/intelrdt"
 )
 
 type collector struct {

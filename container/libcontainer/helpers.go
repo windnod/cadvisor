@@ -19,12 +19,12 @@ import (
 
 	info "github.com/windnod/cadvisor/info/v1"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups"
 	"github.com/windnod/cadvisor/container"
+	"github.com/windnod/runc/libcontainer/cgroups"
 
-	fs "github.com/opencontainers/runc/libcontainer/cgroups/fs"
-	fs2 "github.com/opencontainers/runc/libcontainer/cgroups/fs2"
-	configs "github.com/opencontainers/runc/libcontainer/configs"
+	fs "github.com/windnod/runc/libcontainer/cgroups/fs"
+	fs2 "github.com/windnod/runc/libcontainer/cgroups/fs2"
+	configs "github.com/windnod/runc/libcontainer/configs"
 	"k8s.io/klog/v2"
 )
 

@@ -46,9 +46,9 @@ import (
 	"github.com/windnod/cadvisor/version"
 	"github.com/windnod/cadvisor/watcher"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups"
-	"github.com/opencontainers/runc/libcontainer/cgroups/fs2"
-	"github.com/opencontainers/runc/libcontainer/intelrdt"
+	"github.com/windnod/runc/libcontainer/cgroups"
+	"github.com/windnod/runc/libcontainer/cgroups/fs2"
+	"github.com/windnod/runc/libcontainer/intelrdt"
 
 	"k8s.io/klog/v2"
 	"k8s.io/utils/clock"

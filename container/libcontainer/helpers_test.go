@@ -23,8 +23,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups"
 	"github.com/stretchr/testify/assert"
+	"github.com/windnod/runc/libcontainer/cgroups"
 )
 
 var defaultCgroupSubsystems = []string{

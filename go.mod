@@ -27,7 +27,6 @@ require (
 	github.com/morikuni/aec v1.0.0 // indirect
 	github.com/opencontainers/go-digest v1.0.0 // indirect
 	github.com/opencontainers/image-spec v1.0.1 // indirect
-	github.com/opencontainers/runc v1.0.0-rc95
 	github.com/opencontainers/runtime-spec v1.0.3-0.20210326190908-1c3f411f0417
 	github.com/pkg/errors v0.9.1
 	github.com/prometheus/client_golang v1.7.1
@@ -36,6 +35,7 @@ require (
 	github.com/prometheus/procfs v0.2.0 // indirect
 	github.com/stretchr/testify v1.6.1
 	github.com/vishvananda/netns v0.0.0-20200728191858-db3c7e526aae // indirect
+	github.com/windnod/runc v1.0.2-2
 	golang.org/x/net v0.0.0-20201224014010-6772e930b67b
 	golang.org/x/sys v0.0.0-20211116061358-0a5406a5449c
 	golang.org/x/text v0.3.4 // indirect
@@ -47,5 +47,3 @@ require (
 	k8s.io/klog/v2 v2.2.0
 	k8s.io/utils v0.0.0-20201110183641-67b214c5f920
 )
-
-replace github.com/opencontainers/runc => github.com/windnod/runc v1.1.4-3

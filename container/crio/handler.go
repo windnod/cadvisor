@@ -21,12 +21,12 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups"
 	"github.com/windnod/cadvisor/container"
 	"github.com/windnod/cadvisor/container/common"
 	containerlibcontainer "github.com/windnod/cadvisor/container/libcontainer"
 	"github.com/windnod/cadvisor/fs"
 	info "github.com/windnod/cadvisor/info/v1"
+	"github.com/windnod/runc/libcontainer/cgroups"
 )
 
 type crioContainerHandler struct {

@@ -15,6 +15,7 @@ require (
 	github.com/Rican7/retry v0.1.1-0.20160712041035-272ad122d6e5
 	github.com/SeanDolphin/bqschema v0.0.0-20150424181127-f92a08f515e1
 	github.com/Shopify/sarama v1.19.0
+	github.com/windnod/runc v1.0.2-2
 	github.com/abbot/go-http-auth v0.0.0-20140618235127-c0ef4539dfab
 	github.com/garyburd/redigo v0.0.0-20150301180006-535138d7bcd7
 	github.com/influxdb/influxdb v0.9.6-0.20151125225445-9eab56311373
@@ -31,4 +32,3 @@ require (
 	k8s.io/utils v0.0.0-20201110183641-67b214c5f920
 )
 
-replace github.com/opencontainers/runc => github.com/windnod/runc v1.1.4-3

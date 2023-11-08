@@ -25,11 +25,11 @@ import (
 	"time"
 
 	"github.com/karrick/godirwalk"
-	"github.com/opencontainers/runc/libcontainer/cgroups"
 	"github.com/pkg/errors"
 	"github.com/windnod/cadvisor/container"
 	info "github.com/windnod/cadvisor/info/v1"
 	"github.com/windnod/cadvisor/utils"
+	"github.com/windnod/runc/libcontainer/cgroups"
 	"golang.org/x/sys/unix"
 
 	"k8s.io/klog/v2"

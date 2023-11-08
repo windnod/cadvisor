@@ -30,7 +30,7 @@ import (
 	"github.com/windnod/cadvisor/manager"
 	"github.com/windnod/cadvisor/utils"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups"
+	"github.com/windnod/runc/libcontainer/cgroups"
 )
 
 const (

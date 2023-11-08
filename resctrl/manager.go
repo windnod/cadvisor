@@ -23,7 +23,7 @@ import (
 
 	"github.com/windnod/cadvisor/stats"
 
-	"github.com/opencontainers/runc/libcontainer/intelrdt"
+	"github.com/windnod/runc/libcontainer/intelrdt"
 )
 
 type manager struct {
