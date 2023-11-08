@@ -781,7 +781,9 @@ func setCPUStats(s *cgroups.Stats, ret *info.ContainerStats, withPerCPU bool) {
 	ret.Cpu.CFS.ThrottledPeriods = s.CpuStats.ThrottlingData.ThrottledPeriods
 	ret.Cpu.CFS.ThrottledTime = s.CpuStats.ThrottlingData.ThrottledTime
 
-	convertPSI(&s.CpuStats.PSI, &ret.Cpu.PSI)
+	if s.CpuStats.PSI != nil {
+		convertPSI(s.CpuStats.PSI, &ret.Cpu.PSI)
+	}
 
 	if !withPerCPU {
 		return
@@ -804,7 +806,9 @@ func setDiskIoStats(s *cgroups.Stats, ret *info.ContainerStats) {
 	ret.DiskIo.IoMerged = DiskStatsCopy(s.BlkioStats.IoMergedRecursive)
 	ret.DiskIo.IoTime = DiskStatsCopy(s.BlkioStats.IoTimeRecursive)
 
-	convertPSI(&s.BlkioStats.PSI, &ret.DiskIo.PSI)
+	if s.BlkioStats.PSI != nil {
+		convertPSI(s.BlkioStats.PSI, &ret.DiskIo.PSI)
+	}
 }
 
 func setMemoryStats(s *cgroups.Stats, ret *info.ContainerStats) {
@@ -812,7 +816,9 @@ func setMemoryStats(s *cgroups.Stats, ret *info.ContainerStats) {
 	ret.Memory.MaxUsage = s.MemoryStats.Usage.MaxUsage
 	ret.Memory.Failcnt = s.MemoryStats.Usage.Failcnt
 
-	convertPSI(&s.MemoryStats.PSI, &ret.Memory.PSI)
+	if s.MemoryStats.PSI != nil {
+		convertPSI(s.MemoryStats.PSI, &ret.Memory.PSI)
+	}
 
 	if cgroups.IsCgroup2UnifiedMode() {
 		ret.Memory.Cache = s.MemoryStats.Stats["file"]
