@@ -17,7 +17,7 @@ package main
 import (
 	"flag"
 
-	"github.com/google/cadvisor/utils/oomparser"
+	"github.com/windnod/cadvisor/utils/oomparser"
 	"k8s.io/klog/v2"
 )
 

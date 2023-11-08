@@ -16,8 +16,8 @@
 package install
 
 import (
-	"github.com/google/cadvisor/container"
-	"github.com/google/cadvisor/container/systemd"
+	"github.com/windnod/cadvisor/container"
+	"github.com/windnod/cadvisor/container/systemd"
 	"k8s.io/klog/v2"
 )
 

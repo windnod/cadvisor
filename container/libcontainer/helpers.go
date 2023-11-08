@@ -17,10 +17,10 @@ package libcontainer
 import (
 	"fmt"
 
-	info "github.com/google/cadvisor/info/v1"
+	info "github.com/windnod/cadvisor/info/v1"
 
-	"github.com/google/cadvisor/container"
 	"github.com/opencontainers/runc/libcontainer/cgroups"
+	"github.com/windnod/cadvisor/container"
 
 	fs "github.com/opencontainers/runc/libcontainer/cgroups/fs"
 	fs2 "github.com/opencontainers/runc/libcontainer/cgroups/fs2"

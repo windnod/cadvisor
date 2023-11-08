@@ -21,9 +21,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	info "github.com/google/cadvisor/info/v1"
-	v2 "github.com/google/cadvisor/info/v2"
 	"github.com/stretchr/testify/assert"
+	info "github.com/windnod/cadvisor/info/v1"
+	v2 "github.com/windnod/cadvisor/info/v2"
 )
 
 func BenchmarkListDirectories(b *testing.B) {

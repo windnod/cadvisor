@@ -18,8 +18,8 @@ import (
 	"errors"
 	"time"
 
-	info "github.com/google/cadvisor/info/v1"
-	v2 "github.com/google/cadvisor/info/v2"
+	info "github.com/windnod/cadvisor/info/v1"
+	v2 "github.com/windnod/cadvisor/info/v2"
 )
 
 type testSubcontainersInfoProvider struct{}

@@ -27,20 +27,20 @@ import (
 	"syscall"
 	"time"
 
-	cadvisorhttp "github.com/google/cadvisor/cmd/internal/http"
-	"github.com/google/cadvisor/container"
-	"github.com/google/cadvisor/manager"
-	"github.com/google/cadvisor/metrics"
-	"github.com/google/cadvisor/utils/sysfs"
-	"github.com/google/cadvisor/version"
+	cadvisorhttp "github.com/windnod/cadvisor/cmd/internal/http"
+	"github.com/windnod/cadvisor/container"
+	"github.com/windnod/cadvisor/manager"
+	"github.com/windnod/cadvisor/metrics"
+	"github.com/windnod/cadvisor/utils/sysfs"
+	"github.com/windnod/cadvisor/version"
 
 	// Register container providers
-	_ "github.com/google/cadvisor/cmd/internal/container/install"
+	_ "github.com/windnod/cadvisor/cmd/internal/container/install"
 
 	// Register CloudProviders
-	_ "github.com/google/cadvisor/utils/cloudinfo/aws"
-	_ "github.com/google/cadvisor/utils/cloudinfo/azure"
-	_ "github.com/google/cadvisor/utils/cloudinfo/gce"
+	_ "github.com/windnod/cadvisor/utils/cloudinfo/aws"
+	_ "github.com/windnod/cadvisor/utils/cloudinfo/azure"
+	_ "github.com/windnod/cadvisor/utils/cloudinfo/gce"
 
 	"k8s.io/klog/v2"
 )

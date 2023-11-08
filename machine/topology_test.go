@@ -25,9 +25,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	info "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/utils/sysfs"
-	"github.com/google/cadvisor/utils/sysfs/fakesysfs"
+	info "github.com/windnod/cadvisor/info/v1"
+	"github.com/windnod/cadvisor/utils/sysfs"
+	"github.com/windnod/cadvisor/utils/sysfs/fakesysfs"
 )
 
 func TestPhysicalCores(t *testing.T) {

@@ -26,15 +26,15 @@ import (
 
 	"github.com/blang/semver"
 	dockertypes "github.com/docker/docker/api/types"
-	"github.com/google/cadvisor/container"
-	dockerutil "github.com/google/cadvisor/container/docker/utils"
-	"github.com/google/cadvisor/container/libcontainer"
-	"github.com/google/cadvisor/devicemapper"
-	"github.com/google/cadvisor/fs"
-	info "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/machine"
-	"github.com/google/cadvisor/watcher"
-	"github.com/google/cadvisor/zfs"
+	"github.com/windnod/cadvisor/container"
+	dockerutil "github.com/windnod/cadvisor/container/docker/utils"
+	"github.com/windnod/cadvisor/container/libcontainer"
+	"github.com/windnod/cadvisor/devicemapper"
+	"github.com/windnod/cadvisor/fs"
+	info "github.com/windnod/cadvisor/info/v1"
+	"github.com/windnod/cadvisor/machine"
+	"github.com/windnod/cadvisor/watcher"
+	"github.com/windnod/cadvisor/zfs"
 
 	docker "github.com/docker/docker/client"
 	"golang.org/x/net/context"
@@ -53,7 +53,7 @@ const DockerNamespace = "docker"
 // The retry times for getting docker root dir
 const rootDirRetries = 5
 
-//The retry period for getting docker root dir, Millisecond
+// The retry period for getting docker root dir, Millisecond
 const rootDirRetryPeriod time.Duration = 1000 * time.Millisecond
 
 // Regexp that identifies docker cgroups, containers started with

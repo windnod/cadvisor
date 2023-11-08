@@ -21,11 +21,11 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/google/cadvisor/info/v1"
+	"github.com/windnod/cadvisor/info/v1"
 
-	containertest "github.com/google/cadvisor/container/testing"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	containertest "github.com/windnod/cadvisor/container/testing"
 )
 
 func TestPrometheus(t *testing.T) {

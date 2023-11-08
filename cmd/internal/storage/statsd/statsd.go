@@ -17,9 +17,9 @@ package statsd
 import (
 	"strconv"
 
-	client "github.com/google/cadvisor/cmd/internal/storage/statsd/client"
-	info "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/storage"
+	client "github.com/windnod/cadvisor/cmd/internal/storage/statsd/client"
+	info "github.com/windnod/cadvisor/info/v1"
+	"github.com/windnod/cadvisor/storage"
 )
 
 func init() {
@@ -34,7 +34,7 @@ type statsdStorage struct {
 const (
 	// Cumulative CPU usage
 	// To be deprecated in 0.39
-	// https://github.com/google/cadvisor/issues/2637
+	// https://github.com/windnod/cadvisor/issues/2637
 	colCpuCumulativeUsage string = "cpu_cumulative_usage"
 	// Cumulative CPU usage
 	serCpuUsageTotal  string = "cpu_usage_total"

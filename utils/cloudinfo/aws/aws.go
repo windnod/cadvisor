@@ -22,8 +22,8 @@ import (
 	"github.com/aws/aws-sdk-go/aws/ec2metadata"
 	"github.com/aws/aws-sdk-go/aws/session"
 
-	info "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/utils/cloudinfo"
+	info "github.com/windnod/cadvisor/info/v1"
+	"github.com/windnod/cadvisor/utils/cloudinfo"
 )
 
 const (

@@ -64,13 +64,13 @@ jobs:
       uses: actions/checkout@v2
       with:
         fetch-depth: 1
-        path: go/src/github.com/google/cadvisor
+        path: go/src/github.com/windnod/cadvisor
     - name: Run integration tests
       env:
         GOLANG_VERSION: ${{ matrix.go-versions }}
       run: |
         set -ex
-        cd $GITHUB_WORKSPACE/go/src/github.com/google/cadvisor
+        cd $GITHUB_WORKSPACE/go/src/github.com/windnod/cadvisor
         source ${{ matrix.environment-variables }}
         make docker-test-integration
     - name: Upload cAdvisor log file
@@ -78,4 +78,4 @@ jobs:
       if: failure()
       with:
         name: cadvisor.log
-        path: ${{ github.workspace }}/go/src/github.com/google/cadvisor/cadvisor.log
+        path: ${{ github.workspace }}/go/src/github.com/windnod/cadvisor/cadvisor.log

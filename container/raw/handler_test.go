@@ -21,10 +21,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/google/cadvisor/container"
-	"github.com/google/cadvisor/container/common"
-	"github.com/google/cadvisor/fs"
-	info "github.com/google/cadvisor/info/v1"
+	"github.com/windnod/cadvisor/container"
+	"github.com/windnod/cadvisor/container/common"
+	"github.com/windnod/cadvisor/fs"
+	info "github.com/windnod/cadvisor/info/v1"
 )
 
 func TestFsToFsStats(t *testing.T) {

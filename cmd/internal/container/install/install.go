@@ -16,9 +16,9 @@
 package install
 
 import (
-	_ "github.com/google/cadvisor/cmd/internal/container/mesos/install"
-	_ "github.com/google/cadvisor/container/containerd/install"
-	_ "github.com/google/cadvisor/container/crio/install"
-	_ "github.com/google/cadvisor/container/docker/install"
-	_ "github.com/google/cadvisor/container/systemd/install"
+	_ "github.com/windnod/cadvisor/cmd/internal/container/mesos/install"
+	_ "github.com/windnod/cadvisor/container/containerd/install"
+	_ "github.com/windnod/cadvisor/container/crio/install"
+	_ "github.com/windnod/cadvisor/container/docker/install"
+	_ "github.com/windnod/cadvisor/container/systemd/install"
 )

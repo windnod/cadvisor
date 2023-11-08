@@ -20,12 +20,12 @@ import (
 
 	"github.com/containerd/containerd/containers"
 	"github.com/containerd/typeurl"
-	"github.com/google/cadvisor/container"
-	containerlibcontainer "github.com/google/cadvisor/container/libcontainer"
-	"github.com/google/cadvisor/fs"
-	info "github.com/google/cadvisor/info/v1"
 	specs "github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/stretchr/testify/assert"
+	"github.com/windnod/cadvisor/container"
+	containerlibcontainer "github.com/windnod/cadvisor/container/libcontainer"
+	"github.com/windnod/cadvisor/fs"
+	info "github.com/windnod/cadvisor/info/v1"
 )
 
 func init() {

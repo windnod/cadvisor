@@ -3,12 +3,12 @@ module github.com/windnod/cadvisor/cmd
 go 1.13
 
 // Record that the cmd module requires the cadvisor library module.
-// The github.com/google/cadvisor/cmd module is built using the Makefile
-// from a clone of the github.com/google/cadvisor repository, so we
+// The github.com/windnod/cadvisor/cmd module is built using the Makefile
+// from a clone of the github.com/windnod/cadvisor repository, so we
 // always use the relative local source rather than specifying a module version.
 require github.com/windnod/cadvisor v0.0.0
 
-// Use the relative local source of the github.com/google/cadvisor library to build
+// Use the relative local source of the github.com/windnod/cadvisor library to build
 replace github.com/windnod/cadvisor => ../
 
 require (

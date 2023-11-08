@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+//go:build linux
 // +build linux
 
 // Provides Filesystem Stats
@@ -30,10 +31,10 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/google/cadvisor/devicemapper"
-	"github.com/google/cadvisor/utils"
 	zfs "github.com/mistifyio/go-zfs"
 	mount "github.com/moby/sys/mountinfo"
+	"github.com/windnod/cadvisor/devicemapper"
+	"github.com/windnod/cadvisor/utils"
 
 	"k8s.io/klog/v2"
 )

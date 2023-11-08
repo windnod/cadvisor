@@ -1,3 +1,4 @@
+//go:build libpfm && cgo
 // +build libpfm,cgo
 
 // Copyright 2020 Google Inc. All Rights Reserved.
@@ -21,9 +22,9 @@ import (
 	"fmt"
 	"os"
 
-	info "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/stats"
-	"github.com/google/cadvisor/utils/sysinfo"
+	info "github.com/windnod/cadvisor/info/v1"
+	"github.com/windnod/cadvisor/stats"
+	"github.com/windnod/cadvisor/utils/sysinfo"
 )
 
 type manager struct {

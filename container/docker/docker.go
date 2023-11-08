@@ -25,8 +25,8 @@ import (
 
 	"time"
 
-	"github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/machine"
+	"github.com/windnod/cadvisor/info/v1"
+	"github.com/windnod/cadvisor/machine"
 )
 
 var dockerTimeout = 10 * time.Second

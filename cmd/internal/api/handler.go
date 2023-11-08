@@ -28,10 +28,10 @@ import (
 	"strings"
 	"time"
 
-	httpmux "github.com/google/cadvisor/cmd/internal/http/mux"
-	"github.com/google/cadvisor/events"
-	info "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/manager"
+	httpmux "github.com/windnod/cadvisor/cmd/internal/http/mux"
+	"github.com/windnod/cadvisor/events"
+	info "github.com/windnod/cadvisor/info/v1"
+	"github.com/windnod/cadvisor/manager"
 
 	"k8s.io/klog/v2"
 )

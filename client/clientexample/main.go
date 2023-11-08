@@ -17,8 +17,8 @@ package main
 import (
 	"flag"
 
-	"github.com/google/cadvisor/client"
-	info "github.com/google/cadvisor/info/v1"
+	"github.com/windnod/cadvisor/client"
+	info "github.com/windnod/cadvisor/info/v1"
 
 	"k8s.io/klog/v2"
 )

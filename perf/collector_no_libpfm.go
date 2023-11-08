@@ -1,3 +1,4 @@
+//go:build !libpfm || !cgo
 // +build !libpfm !cgo
 
 // Copyright 2020 Google Inc. All Rights Reserved.
@@ -18,7 +19,7 @@
 package perf
 
 import (
-	"github.com/google/cadvisor/stats"
+	"github.com/windnod/cadvisor/stats"
 
 	"k8s.io/klog/v2"
 )

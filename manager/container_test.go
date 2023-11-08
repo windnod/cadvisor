@@ -23,20 +23,20 @@ import (
 	"testing"
 	"time"
 
-	"github.com/google/cadvisor/cache/memory"
-	"github.com/google/cadvisor/collector"
-	"github.com/google/cadvisor/container"
-	containertest "github.com/google/cadvisor/container/testing"
-	info "github.com/google/cadvisor/info/v1"
-	itest "github.com/google/cadvisor/info/v1/test"
-	v2 "github.com/google/cadvisor/info/v2"
+	"github.com/windnod/cadvisor/cache/memory"
+	"github.com/windnod/cadvisor/collector"
+	"github.com/windnod/cadvisor/container"
+	containertest "github.com/windnod/cadvisor/container/testing"
+	info "github.com/windnod/cadvisor/info/v1"
+	itest "github.com/windnod/cadvisor/info/v1/test"
+	v2 "github.com/windnod/cadvisor/info/v2"
 
 	"github.com/mindprince/gonvml"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	clock "k8s.io/utils/clock/testing"
 
-	"github.com/google/cadvisor/accelerators"
+	"github.com/windnod/cadvisor/accelerators"
 )
 
 const (

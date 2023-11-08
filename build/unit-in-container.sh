@@ -36,8 +36,8 @@ function run_tests() {
   fi
 
   $CONTAINER_ENGINE run --rm \
-    -w /go/src/github.com/google/cadvisor \
-    -v ${PWD}:/go/src/github.com/google/cadvisor \
+    -w /go/src/github.com/windnod/cadvisor \
+    -v ${PWD}:/go/src/github.com/windnod/cadvisor \
     golang:${GOLANG_VERSION} \
     bash -c "$BUILD_CMD"
 }

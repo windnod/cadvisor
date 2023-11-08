@@ -21,10 +21,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/google/cadvisor/container"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/common/expfmt"
 	"github.com/stretchr/testify/assert"
+	"github.com/windnod/cadvisor/container"
 )
 
 const machineMetricsFile = "testdata/prometheus_machine_metrics"

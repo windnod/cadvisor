@@ -12,7 +12,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+//go:build influxdb_test
 // +build influxdb_test
+
 // To run unit test: go test -tags influxdb_test
 
 package influxdb
@@ -25,9 +27,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/google/cadvisor/cmd/internal/storage/test"
-	info "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/storage"
+	"github.com/windnod/cadvisor/cmd/internal/storage/test"
+	info "github.com/windnod/cadvisor/info/v1"
+	"github.com/windnod/cadvisor/storage"
 
 	influxdb "github.com/influxdb/influxdb/client"
 	"github.com/stretchr/testify/assert"

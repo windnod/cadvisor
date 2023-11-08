@@ -18,8 +18,8 @@ import (
 	"flag"
 	"testing"
 
-	"github.com/google/cadvisor/container"
 	"github.com/stretchr/testify/assert"
+	"github.com/windnod/cadvisor/container"
 )
 
 func TestTcpMetricsAreDisabledByDefault(t *testing.T) {

@@ -1,3 +1,4 @@
+//go:build libpfm && cgo
 // +build libpfm,cgo
 
 // Copyright 2020 Google Inc. All Rights Reserved.
@@ -29,7 +30,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	v1 "github.com/google/cadvisor/info/v1"
+	v1 "github.com/windnod/cadvisor/info/v1"
 )
 
 func mockSystemDevices() (string, error) {

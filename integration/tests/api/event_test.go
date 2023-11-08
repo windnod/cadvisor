@@ -19,9 +19,9 @@ import (
 	"testing"
 	"time"
 
-	info "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/integration/framework"
 	"github.com/stretchr/testify/require"
+	info "github.com/windnod/cadvisor/info/v1"
+	"github.com/windnod/cadvisor/integration/framework"
 )
 
 func TestStreamingEventInformationIsReturned(t *testing.T) {

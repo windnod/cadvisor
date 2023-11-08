@@ -46,15 +46,15 @@ docker-test: container-test
 
 test-integration:
 	@GO_FLAGS=${$GO_FLAGS:-"-race"} ./build/build.sh
-	go test -c github.com/google/cadvisor/integration/tests/api
-	go test -c github.com/google/cadvisor/integration/tests/healthz
+	go test -c github.com/windnod/cadvisor/integration/tests/api
+	go test -c github.com/windnod/cadvisor/integration/tests/healthz
 	@./build/integration.sh
 
 docker-test-integration:
 	@./build/integration-in-docker.sh
 
 test-runner:
-	@$(GO) build github.com/google/cadvisor/integration/runner
+	@$(GO) build github.com/windnod/cadvisor/integration/runner
 
 tidy:
 	@$(GO) mod tidy
@@ -86,7 +86,7 @@ docker-%:
 	@docker build -t cadvisor:$(shell git rev-parse --short HEAD) -f deploy/Dockerfile$(Dockerfile_tag) .
 
 docker-build:
-	@docker run --rm -w /go/src/github.com/google/cadvisor -v ${PWD}:/go/src/github.com/google/cadvisor golang:1.16 make build
+	@docker run --rm -w /go/src/github.com/windnod/cadvisor -v ${PWD}:/go/src/github.com/windnod/cadvisor golang:1.16 make build
 
 presubmit: vet
 	@echo ">> checking go formatting"

@@ -1,3 +1,4 @@
+//go:build linux
 // +build linux
 
 // Copyright 2020 Google Inc. All Rights Reserved.
@@ -20,7 +21,7 @@ package resctrl
 import (
 	"os"
 
-	"github.com/google/cadvisor/stats"
+	"github.com/windnod/cadvisor/stats"
 
 	"github.com/opencontainers/runc/libcontainer/intelrdt"
 )

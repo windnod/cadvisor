@@ -32,7 +32,7 @@ import (
 	"sync"
 	"time"
 
-	cadvisorApi "github.com/google/cadvisor/info/v2"
+	cadvisorApi "github.com/windnod/cadvisor/info/v2"
 	"k8s.io/klog/v2"
 )
 
@@ -179,7 +179,7 @@ func PushAndRunTests(host, testDir string) (result error) {
 		}
 		// Run the command
 
-		err = RunCommand("go", "test", "--timeout", testTimeout.String(), "github.com/google/cadvisor/integration/tests/...", "--host", host, "--port", portStr, "--ssh-options", *sshOptions)
+		err = RunCommand("go", "test", "--timeout", testTimeout.String(), "github.com/windnod/cadvisor/integration/tests/...", "--host", host, "--port", portStr, "--ssh-options", *sshOptions)
 		if err == nil {
 			// On success, break out of retry loop
 			break

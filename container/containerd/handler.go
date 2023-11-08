@@ -24,12 +24,12 @@ import (
 	"github.com/containerd/containerd/errdefs"
 	"golang.org/x/net/context"
 
-	"github.com/google/cadvisor/container"
-	"github.com/google/cadvisor/container/common"
-	containerlibcontainer "github.com/google/cadvisor/container/libcontainer"
-	"github.com/google/cadvisor/fs"
-	info "github.com/google/cadvisor/info/v1"
 	specs "github.com/opencontainers/runtime-spec/specs-go"
+	"github.com/windnod/cadvisor/container"
+	"github.com/windnod/cadvisor/container/common"
+	containerlibcontainer "github.com/windnod/cadvisor/container/libcontainer"
+	"github.com/windnod/cadvisor/fs"
+	info "github.com/windnod/cadvisor/info/v1"
 )
 
 type containerdContainerHandler struct {

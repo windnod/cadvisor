@@ -17,9 +17,9 @@ package metrics
 import (
 	"strconv"
 
-	"github.com/google/cadvisor/container"
-	info "github.com/google/cadvisor/info/v1"
 	"github.com/prometheus/client_golang/prometheus"
+	"github.com/windnod/cadvisor/container"
+	info "github.com/windnod/cadvisor/info/v1"
 
 	"k8s.io/klog/v2"
 )
